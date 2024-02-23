@@ -8,10 +8,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.Collection;
-import java.util.Date;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
 @Data
 @Entity
@@ -27,5 +24,20 @@ public class Event  {
     private Date date;
     private String location;
 private RoomStatus roomStatus;
+    @ManyToOne
+    private Guest guest;
+
+    public Event(String title, String description, Date date, String location, RoomStatus roomStatus, Guest guest) {
+        Random random = new Random();
+        int pick = new Random().nextInt(RoomStatus.values().length);
+        this.title = title;
+        this.description = description;
+        this.date = date;
+        this.location = location;
+        this.roomStatus = RoomStatus.values()[pick];
+        this.guest = guest;
+    }
+
+
 }
 
