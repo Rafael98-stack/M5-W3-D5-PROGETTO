@@ -1,6 +1,5 @@
 package it.be.epicode.EsercizioCinque_Progetto.config;
 
-package riccardogulin.u5d12.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
