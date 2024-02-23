@@ -1,4 +1,4 @@
-package it.be.epicode.EsercizioCinque_Progetto.exeptions;
+package it.be.epicode.EsercizioCinque_Progetto.exceptions;
 
 
 import org.springframework.http.HttpStatus;

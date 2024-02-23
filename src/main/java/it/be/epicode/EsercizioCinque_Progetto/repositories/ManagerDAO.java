@@ -1,6 +1,5 @@
 package it.be.epicode.EsercizioCinque_Progetto.repositories;
 
-import it.be.epicode.EsercizioCinque_Progetto.entities.Guest;
 import it.be.epicode.EsercizioCinque_Progetto.entities.Manager;
 import org.springframework.data.jpa.repository.JpaRepository;
 
