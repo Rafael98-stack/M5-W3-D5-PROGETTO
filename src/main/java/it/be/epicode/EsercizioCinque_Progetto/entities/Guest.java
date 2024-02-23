@@ -27,8 +27,8 @@ public class Guest implements UserDetails {
     private String password;
     @Enumerated(EnumType.STRING)
     private Role role;
-@OneToMany
-private List<Event> events;
+//@OneToMany
+//private List<Event> events;
     public Guest(String name, String surname, String email, String password) {
         this.name = name;
         this.surname = surname;
