@@ -27,14 +27,14 @@ public class Guest implements UserDetails {
     private String password;
     @Enumerated(EnumType.STRING)
     private Role role;
-
-
+@OneToMany
+private List<Event> events;
     public Guest(String name, String surname, String email, String password) {
         this.name = name;
         this.surname = surname;
         this.email = email;
         this.password = password;
-        this.role = Role.MANAGER;
+        this.role = Role.GUEST;
     }
 
     @Override
